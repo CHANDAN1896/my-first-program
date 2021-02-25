@@ -1,0 +1,113 @@
+<!--DOCTYPE html>
+<html>
+<head>
+<title> BASIC HTML TABLE </title>
+<p><h1> BASIC HTML TABLE: </h1></p> 
+</head>
+<body>
+<table border=" 5 " cellspacing=" 0 " align="center" cellpadding="20">
+	<tr>
+		<th align="center" height=" 50" width="80" > first name </th>
+		<th align="center" height=" 50" width="80" > last name </th>
+		<th align="center" height=" 50" width="80" > age </th>
+	</tr>		
+	<tr>
+		<td align="center" height="50" width="80">jill</td>
+		<td align=" center" height=" 50" width="80">smith</td>
+		<td align=" center" height=" 50" width="80">50</td>
+    </tr>
+    <tr>
+    	<td align="center" height=" 50" width="80"> eve </td>
+    	<td align="center" height=" 50" width="80"> jackson </td>
+    	<td align="center" height=" 50" width="80"> 94 </td>
+    </tr>
+    <tr>
+    	<td align=" center" height=" 50" width="80"> john </td>
+    	<td align=" center" height=" 50" width="80"> doe </td>
+    	<td align=" center" height=" 50" width="80"> 80 </td>
+    </tr>
+ </table>
+</body>
+</html>  
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lable program</title>
+</head>
+<body>
+	<h2>radio button</h2>
+	<form>
+		<input type="button" value="button"><br>
+        <input type="radio" id="male" name="gender" value="male">
+		<label for="male">male</label><br>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">female</label><br>
+		<input type="radio" id="other" name="gender" value="other">
+		<label for="other">other</label><br>
+		<input type="submit" value="submit">
+    </form>
+</body>
+</html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>check boxes</title>
+</head>
+<body>
+	<h2>checkboxes</h2>
+    <p>the <strong>input type= "checkbox"</strong>defines a checbox:</p>
+    <form action="/action_page.php">
+    	<input type="checkbox" id="vehicle1" name="vehicle1" value="bike">
+        <label for="vehicle1">i have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="car">
+        <label for="vehicle2">i have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="cycle">
+        <label for="vehicle3">i have a cycle</label><br>
+        <input type="submit" value="submit">
+
+    </form>
+</body>
+</html--> 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>timer program</title>
+	<meta name = "viewport"
+	content="width=device-width,
+	intial-scale=1">
+	<style>
+		p{
+			text-align: center;
+			font-size: 60px;
+			margin-top: 0px;
+		}
+
+	</style>
+</head>								
+<body>
+	<p id="demo"></p>
+	<script>
+			var countDownDate= new Date("feb 17 , 2022 20:00:00").getTime();
+			var x = setInterval(function(){
+				var now = new Date().getTime();
+				var distance = countDownDate-now;
+				var days = Math.floor(distance
+					/(1000*60*60*24));
+				var hours = 
+				Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+                var minutes =
+                Math.floor((distance%(1000*60*60))/(1000*60));
+                var seconds =
+                Math.floor((distance%(1000*60))/1000);
+                document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+                if (distance<0){
+                	clearInterval(x);
+                	document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+			}, 1000);
+	</script>
+
+</body>
+</html>
